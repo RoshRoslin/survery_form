@@ -1,15 +1,48 @@
+<!DOCTYPE html>
 <html lang ="en">
   <head>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        padding-left: 20%;
+        padding-right: 20%;
+
+      }
+
+      label {
+        font-size: 18px;
+        display: block;
+        padding-bottom: 10px;
+      }
+      input {
+        display: block;
+      }
+      form {
+        background-color: #20639B;
+        padding: 40px 40px 40px 40px
+      }
+
+      .radio-inline {
+        display: inline-block;
+      }
+      .checkbox {
+        display: inline-block;
+      }
+    </style>
   </head>
 
   <body>
     <h1 id="title">Tell me about music</h1>
-    <p id = "description">This is a Survey where you can tell us about music you're inspired by
+    <p id = "description">This is a survey where you can tell us about music you're inspired by
     </p>
     <form id = "survey-form">
-  <label id = "name-label">  Name: </label>  <input type = "text" name ="name" required id="name" placeholder = "Name"><br>
-  <label id= "email-label">  Email: </label><input type ="email" name ="name" required id ="email" placeholder = "Email"><br>
-  <label id= "number-label">  Number:</label> <input type = "number" name ="name" required id ="number" min = "0" max ="10" placeholder = "#"><br>
+  <label id = "name-label">  Name: </label>
+   <input type = "text" name ="name" required id="name" placeholder = "Name"><br>
+  <label id= "email-label">  Email: </label>
+  <input type ="email" name ="name" required id ="email" placeholder = "Email"><br>
+  <label id= "number-label">  Number:</label>
+  <input type = "number" name ="name" required id ="number" min = "0" max ="10" placeholder = "#"><br>
   <select id="dropdown" name="guitars">
   <option value="fender">Fender</option>
   <option value="gibson">Gibson</option>
@@ -17,18 +50,16 @@
   <option value="kiesel">Kiesel</option>
   </select>
   <br>
-  <input type="radio" id="male" name="gender" value="male">
-<label for="male">Male</label><br>
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label><br>
-<input type="radio" id="other" name="gender" value="other">
-<label for="other">Other</label>
+  <input type="radio" id="male" class = "radio-inline" name="gender" value="male">Male <br>
+  <input type="radio" id="female" class = "radio-inline" name="gender" value="female">Female<br>
+  <input type="radio" id="other" class = "radio-inline"  name="gender" value="other">Other<br>
+
 <br>
-<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class = "checkbox">
 <label for="vehicle1"> I have a bike</label><br>
-<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car" class = "checkbox">
 <label for="vehicle2"> I have a car</label><br>
-<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" class = "checkbox">
 <label for="vehicle3"> I have a boat</label><br>
 <br>
 <textarea placeholder = "additional comments"></textarea>
